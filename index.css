@@ -1,0 +1,731 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+/* header section start */
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: black;
+}
+.logo {
+  color: white;
+  font-size: 18px;
+
+  align-self: center;
+  padding: 15px;
+}
+.logo small {
+  color: #fac564;
+  font-size: 18px;
+
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+header .menu {
+  align-self: center;
+}
+
+header a {
+  padding: 25px 20px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 18px;
+}
+.menu a:hover {
+  color: #fac564;
+}
+/* header section end */
+/* container 1 start */
+.con1 {
+  /* background-image: url(images/c1-bg-img.jpg); */
+  /* height: 750px; */
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0px;
+}
+.con1 .banner {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+}
+.con1 .banner .content {
+  text-align: right;
+  position: relative;
+  top: 100px;
+  right: 30px;
+}
+.content span {
+  font-family: "Nothing You Could Do", cursive;
+  font-size: 30px;
+  color: #fac564;
+}
+.content h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #fff;
+  line-height: 1.5;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.content p {
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: white;
+  /* border: 1px solid; */
+}
+.content .order {
+  margin-top: 50px;
+}
+.content .order a {
+  text-decoration: none;
+  padding: 20px;
+}
+.content .order .ordernow {
+  color: black;
+  background-color: #fac564;
+}
+.content .order .viewmenu {
+  color: white;
+  border: 1px solid;
+}
+/* container 1 end */
+.blankcontainer {
+  /* height: 144px; */
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.phone {
+  display: flex;
+  align-items: center;
+}
+.blankcontainer span {
+  color: #fac564;
+}
+.blankcontainer span i {
+  font-size: 30px;
+  padding-right: 15px;
+}
+.blankcontainer h4 {
+  color: white;
+}
+.blankcontainer p {
+  color: #808080;
+}
+/* container 2 start */
+.con2 {
+  /* height: 408px; */
+  display: flex;
+  flex-wrap: wrap;
+  background: black;
+}
+.con2 .imgcon {
+  /* height: 408px; */
+  width: 47%;
+}
+.con2 .imgcon img {
+  width: 100%;
+  height: 100%;
+}
+.welcomecon {
+  background-image: url(images/con2-mg-black.jpg);
+  width: 50%;
+  align-self: center;
+  padding: 0 20px;
+}
+.welcomecon h2 {
+  color: white;
+  /* font-size: 30px; */
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  /* position: relative; */
+  text-transform: uppercase;
+}
+.welcomecon h2 span {
+  color: #fac564;
+}
+/* .welcon {
+  height: 40px;
+  width: 627px;
+  position: relative;
+  top: 68px;
+  left: 111px;
+} */
+.welcomecon p {
+  color: #808080;
+  position: relative;
+  font-size: 20px;
+}
+/* container 2 end */
+/* container 3 start */
+.con3 {
+  background-image: url(images/pizza-con2-waal.jpg);
+  height: 652px;
+  align-content: center;
+  object-fit: cover;
+  /* background-size: cover; */
+  background-attachment: fixed;
+}
+.con3 .ourser {
+  /* border: 1px solid; */
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+.con3 .ourser h2 {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.con3 .ourser p {
+  font-size: 20px;
+  /* justify-content: center;
+    display: flex; */
+  text-align: center;
+  text-align-last: center;
+  color: #b1873a;
+  margin-bottom: 60px;
+}
+.titleser {
+  /* border: 1px solid; */
+  width: 349px;
+  height: 274px;
+}
+.adver {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.titleser .flog {
+  display: flex;
+  justify-content: center;
+}
+.titleser .foodlogo {
+  border: 1px solid rgb(205, 204, 250);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  transition: all 0.5s ease-in-out;
+}
+.titleser .foodlogo i {
+  color: white;
+  font-size: 45px;
+  align-self: center;
+}
+
+.titleser .foodlogo::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: -1;
+  /* background: darkblue; */
+}
+
+.titleser .foodlogo:hover::before {
+  transform: rotate(50deg);
+
+  background-color: #ffc107;
+  color: rgb(255, 239, 239);
+  transition: 1s;
+}
+.titleser .foodlogo:hover {
+  border: none;
+  transition: 1s;
+  color: black;
+}
+.titleser .foodlogo img {
+  color: white;
+  z-index: 0;
+}
+.titleser h3 {
+  text-align: center;
+  font-size: 28px;
+  color: #beb7b7;
+}
+.titleser p {
+  font-size: 17px;
+  font-family: sans-serif;
+  color: #5c3d03;
+}
+/* container 3 end */
+/* container 4 start */
+.con4 {
+  background-image: url(images/con2-mg-black.jpg);
+  color: white;
+  padding-bottom: 50px;
+}
+.con4 h2 {
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+  top: 20px;
+  margin-top: 0;
+}
+.con4 .titledetails {
+  text-align: center;
+  position: relative;
+  top: 20px;
+  bottom: 20px;
+  color: #808080;
+}
+.con4 .food1 {
+  /* border: 1px solid white; */
+  width: 547px;
+  height: 241px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  transition: all 0.3s ease-in-out;
+}
+.con4 .food1 img {
+  width: 273px;
+  height: 241px;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.con4 .cardfood {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  margin-top: 40px;
+  /* position: relative;
+    bottom: 50px; */
+}
+.con4 .cardfood .detailfood {
+  padding: 30px;
+}
+.con4 .cardfood .detailfood p {
+  color: #808080;
+  margin-bottom: 30px;
+}
+.con4 .cardfood .detailfood span {
+  color: #fac564;
+  font-size: 20px;
+}
+.con4 .cardfood .detailfood p a {
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  padding: 7px;
+  position: relative;
+  left: 20px;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+.con4 .cardfood .detailfood p a:hover {
+  color: #000000;
+  border: 1px solid #fac564;
+  background-color: #fac564;
+}
+.con4 .food1:hover {
+  /* transform: scale(0.9,0.9); */
+  border-radius: 20px;
+  box-shadow: 2px -1px 20px 0px rgb(223, 205, 107);
+}
+/* container 4 end */
+
+/* container 5 start */
+.con5 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  /* flex-wrap: wrap; */
+}
+.con5 .adimg1 {
+  width: 410px;
+  height: 300px;
+}
+.con5 .adimg1 .gallery-1 {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.con5 .adimg1 .searchicon i {
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
+  padding: 20px;
+  font-size: 25px;
+  transition: all 0.3s ease-in-out;
+  /* visibility: hidden; */
+}
+
+.con5 .adimg1 .gallery-1 .searchicon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.con5 .adimg1 .searchicon i:hover {
+  /* visibility: visible;
+  z-index: 1; */
+  transform: rotate(50deg);
+  color: #ffc107;
+  border: 1px solid #ffc107;
+}
+/* container 5 end */
+/* container 6 start */
+.con6 {
+  background-image: url(images/images/bg_2.jpg);
+  background-attachment: fixed;
+  height: 300px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.con6 .rating {
+  /* position: absolute; */
+  position: relative;
+  top: 20%;
+  /* left: 20%; */
+  /* border: 1px solid red; */
+  height: 179px;
+  width: 950px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.con6 .rating .r1 {
+  /* border: 1px solid yellow; */
+  width: 230px;
+  color: white;
+  /* display: flex;
+  justify-content: center; */
+  height: 100%;
+}
+.con6 .rating .r1 .r1img {
+  /* border: 1px solid blue; */
+  /* display: flex;
+ justify-content: center; */
+  /* width: 63px; */
+  /* left: 33%;
+   top: 10%; */
+  padding: 10px;
+  /* width: 91%; */
+  text-align: center;
+}
+.con6 .rating .r1 .r1img i {
+  border: 1px solid rgb(250, 197, 100);
+  padding: 15px;
+  /* height: 80px; */
+  color: white;
+  font-size: 45px;
+  text-align: center;
+  align-self: center;
+  color: rgb(250, 197, 100);
+}
+.con6 .rating .r1 h2 {
+  text-align: center;
+  color: rgb(250, 197, 100);
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.con6 .rating .r1 p {
+  text-align: center;
+  color: #808080;
+}
+/* container 6 end */
+/* container 7 start */
+.con7 {
+  background-image: url(images/con2-mg-black.jpg);
+  color: white;
+}
+.drinkheading h2 {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 20px;
+}
+.drinkpara p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.con7 .coolsec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+}
+.con7 .cooldrinks {
+  width: 250px;
+  border: 1px solid #fac564;
+  padding: 10px;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.con7 .cooldrinks:hover {
+  box-shadow: 3px 0px 20px 2px #e1e152;
+  transform: scale(1.1, 1.1);
+}
+.con7 .cooldrinks .drinkimg {
+  width: 100%;
+}
+.con7 .cooldrinks .drinkimg img {
+  width: 100%;
+  border-radius: 50%;
+}
+.con7 .cooldrinks .drinkname h3 {
+  text-align: center;
+}
+.con7 .cooldrinks .drinkspec p {
+  text-align: center;
+  color: #808080;
+}
+.con7 .cooldrinks .order {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.con7 .cooldrinks .order span {
+  color: #fac564;
+  align-self: center;
+}
+.con7 .cooldrinks .order a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid #b1873a;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.2s ease-in;
+}
+.con7 .cooldrinks .order a:hover {
+  color: black;
+  background-color: #fac564;
+  transform: scale(1.2, 1.2);
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px 2px #e1e152;
+}
+
+/* footer start */
+.contact {
+  display: flex;
+  /* justify-content:space-evenly ; */
+  flex-wrap: wrap;
+  background-color: #000000;
+  color: white;
+}
+.map {
+  width: 50%;
+}
+.map iframe {
+  width: 100%;
+}
+.conus {
+  width: 50%;
+  position: relative;
+  left: 3%;
+}
+.conus .detailscontact {
+  display: block;
+}
+
+.conus .detailscontact .nu1 {
+  position: relative;
+}
+.conus .detailscontact .nu1 p {
+  color: #808080;
+}
+.conus .detailscontact input {
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 500px;
+  /* margin-top: 50px; */
+}
+.sendbtn {
+  margin-top: 30px;
+}
+.sendbtn a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #fac564;
+  border: 1px solid #fac564;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.sendbtn a:hover {
+  color: black;
+  background-color: #fac564;
+}
+/*  */
+.foot2 {
+  background-image: url(images/con2-mg-black.jpg);
+}
+.containerfoot {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.foicon {
+  color: #b1873a;
+  font-size: 25px;
+}
+.foicon i {
+  margin: 10px;
+}
+.foimgcon {
+  width: 251px;
+}
+.foimgcon img {
+  width: 100%;
+}
+.foimgcont {
+  display: flex;
+  padding: 10px 10px 10px 1px;
+}
+
+.focontent h5 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 6px;
+}
+.icon10 {
+  display: flex;
+}
+.icon10 .iconmap {
+  padding: 20px;
+  color: #b1873a;
+  font-size: 25px;
+  align-content: center;
+}
+.containerfoot .fo1 {
+  width: 200px;
+  padding: 30px;
+}
+.containerfoot .fo1 h3 {
+  color: white;
+}
+.containerfoot .fo1 p {
+  color: #808080;
+  font-size: 17px;
+}
+.containerfoot .fo1 h5 {
+  color: #808080;
+  font-size: 15px;
+}
+.copyright {
+  color: #808080;
+  text-align: center;
+  padding-bottom: 20px;
+}
+/* .copyright h3{
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+@media screen and (max-width: 500px) {
+  .con2 .imgcon {
+    width: 100%;
+  }
+  .welcomecon {
+    background-image: url(images/con2-mg-black.jpg);
+    width: 100%;
+    align-self: center;
+    padding: 0 20px;
+  }
+  .con3 {
+    background-image: url(images/pizza-con2-waal.jpg);
+    height: 1208px;
+    align-content: center;
+    object-fit: cover;
+    /* background-size: cover; */
+    background-attachment: fixed;
+}
+.titleser {
+    
+    height: auto;
+}
+.con4 .food1
+
+ {
+    width: 547px;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    transition: all 0.3s ease-in-out;
+}
+.foodimg{
+      width: 100%;
+    text-align: center;
+}
+.detailfood{
+  text-align: center;
+}
+.con4 .food1 img {
+    width: 273px;
+    height: 241px;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.con6 {
+    background-image: url(images/images/bg_2.jpg);
+    background-attachment: fixed;
+    height: 500px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+}
+.pizzaimg img{
+      height: 80%;
+    margin-top: 20%;
+    width: 100%;
+}
+.con1 .banner .content {
+        text-align: center;
+        position: relative;
+        top: 62px;
+        right: 0px;
+    }
+header .menu {
+    
+    text-align: center;
+    padding: 10px;
+}
+header a {
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 18px;
+}
+.map {
+    width: 100%;
+    
+}
+.conus .detailscontact input {
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 147%;
+    /* margin-top: 50px; */
+}
+.sendbtn {
+    margin-top: 37px;
+}
+.containerfoot .fo1 {
+    width: 77%;
+    padding: 30px;
+}
+.copyright h3{
+  padding: 5%;
+}
+}
